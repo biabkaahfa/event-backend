@@ -1,10 +1,9 @@
 # Event Management API 
 
-Une API robuste et scalable pour la gestion d'événements, construite avec **Laravel 11**, **Sanctum** pour l'authentification, et une architecture propre.
+Une API robuste et scalable pour la gestion d'événements, construite avec **Laravel 11** et une architecture propre.
 
 ##  Fonctionnalités
 
--  **Authentification Sécurisée** : Gestion des utilisateurs avec Laravel Sanctum (Token-based).
 -  **Gestion des Événements** : CRUD complet pour les événements.
 - **Inscriptions** : Système d'inscription avec validation de la capacité et détection des doublons.
 - **Pagination** : Listes optimisées avec pagination personnalisable.
@@ -14,7 +13,6 @@ Une API robuste et scalable pour la gestion d'événements, construite avec **La
 ## Stack Technique
 
 - **Framework** : Laravel 11
-- **Authentification** : Laravel Sanctum
 - **Base de données** : SQLite (par défaut) / MySQL
 - **Validation** : Form Requests
 - **Architecture** : Trait-based API responses, Controller-Model-Request
@@ -50,28 +48,20 @@ Une API robuste et scalable pour la gestion d'événements, construite avec **La
 
 ##  Documentation de l'API
 
-### Authentification
-- `POST /api/register` : Créer un nouveau compte.
-- `POST /api/login` : Se connecter et obtenir un token.
-- `POST /api/logout` : Se déconnecter (authentifié).
-- `GET /api/me` : Obtenir les infos de l'utilisateur actuel (authentifié).
-
 ### Événements
 - `GET /api/events` : Liste des événements (paginée).
 - `GET /api/events/{id}` : Détails d'un événement.
-- `POST /api/events` : Créer un événement (authentifié).
-- `PUT /api/events/{id}` : Modifier un événement (authentifié).
-- `DELETE /api/events/{id}` : Supprimer un événement (authentifié).
+- `POST /api/events` : Créer un événement.
+- `PUT /api/events/{id}` : Modifier un événement.
+- `DELETE /api/events/{id}` : Supprimer un événement.
 
 ### Inscriptions
 - `POST /api/events/{id}/register` : S'inscrire à un événement.
-- `GET /api/events/{id}/registrations` : Liste des inscrits (authentifié).
-- `DELETE /api/registrations/{id}` : Annuler une inscription (authentifié).
+- `GET /api/events/{id}/registrations` : Liste des inscrits pour un événement.
+- `DELETE /api/registrations/{id}` : Annuler une inscription.
 
 ## Tests
 
 ```bash
 php artisan test
 ```
-
-
