@@ -1,17 +1,17 @@
-# Event Management API 🚀
+# Event Management API 
 
 Une API robuste et scalable pour la gestion d'événements, construite avec **Laravel 11**, **Sanctum** pour l'authentification, et une architecture propre.
 
-## ✨ Fonctionnalités
+##  Fonctionnalités
 
-- 🔐 **Authentification Sécurisée** : Gestion des utilisateurs avec Laravel Sanctum (Token-based).
-- 📅 **Gestion des Événements** : CRUD complet pour les événements.
-- 📝 **Inscriptions** : Système d'inscription avec validation de la capacité et détection des doublons.
-- 📊 **Pagination** : Listes optimisées avec pagination personnalisable.
-- 🛡️ **Validation Robuste** : Utilisation de Form Requests pour une validation stricte des données.
-- 🧩 **Réponses Homogènes** : Structure de réponse API cohérente pour faciliter l'intégration frontend.
+-  **Authentification Sécurisée** : Gestion des utilisateurs avec Laravel Sanctum (Token-based).
+-  **Gestion des Événements** : CRUD complet pour les événements.
+- **Inscriptions** : Système d'inscription avec validation de la capacité et détection des doublons.
+- **Pagination** : Listes optimisées avec pagination personnalisable.
+-  **Validation Robuste** : Utilisation de Form Requests pour une validation stricte des données.
+-  **Réponses Homogènes** : Structure de réponse API cohérente pour faciliter l'intégration frontend.
 
-## 🛠️ Stack Technique
+## Stack Technique
 
 - **Framework** : Laravel 11
 - **Authentification** : Laravel Sanctum
@@ -19,7 +19,7 @@ Une API robuste et scalable pour la gestion d'événements, construite avec **La
 - **Validation** : Form Requests
 - **Architecture** : Trait-based API responses, Controller-Model-Request
 
-## 🚀 Installation
+##  Installation
 
 1. **Cloner le dépôt** :
    ```bash
@@ -48,7 +48,7 @@ Une API robuste et scalable pour la gestion d'événements, construite avec **La
    php artisan serve
    ```
 
-## 📖 Documentation de l'API
+##  Documentation de l'API
 
 ### Authentification
 - `POST /api/register` : Créer un nouveau compte.
@@ -68,11 +68,10 @@ Une API robuste et scalable pour la gestion d'événements, construite avec **La
 - `GET /api/events/{id}/registrations` : Liste des inscrits (authentifié).
 - `DELETE /api/registrations/{id}` : Annuler une inscription (authentifié).
 
-## 🧪 Tests
+## Tests
 
 ```bash
 php artisan test
 ```
 
----
-Développé avec ❤️ par Antigravity.
+
